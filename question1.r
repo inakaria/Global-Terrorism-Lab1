@@ -1,6 +1,5 @@
 library(ggplot2)
 
-
 png(filename = "Number of Successful Terrorist Attacks by Year.png", width = 1600, height = 600)
 data <- read.csv("terror_clean.csv")
 
