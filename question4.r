@@ -2,7 +2,8 @@ library(ggplot2)
 library(dplyr)
 library(treemap)
 
-png(filename = "TOP-50 Terrorist Groups by Number of Successful Terrorist Attacks.png", width = 1000, height = 1000)
+png(filename = "Q4 - TOP-50 Terrorist Groups by Number of Successful Terrorist Attacks.png", 
+    width = 2500, height = 2500, res = 300)
 data <- read.csv("terror.csv")
 
 data_grouped <- data %>% 

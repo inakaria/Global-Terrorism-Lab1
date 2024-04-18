@@ -1,7 +1,8 @@
 library(ggplot2)
 library(dplyr)
 
-png(filename = "Number of Successful Terrorist Attacks by Type.png", width = 1000, height = 1000)
+png(filename = "Q3 - Number of Successful Terrorist Attacks by Type.png", 
+    width = 2500, height = 2500, res = 300)
 data <- read.csv("terror.csv")
 
 data_grouped <- data %>% 

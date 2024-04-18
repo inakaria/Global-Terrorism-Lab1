@@ -1,7 +1,8 @@
 library(ggplot2)
 library(dplyr)
 
-png(filename = "TOP-10 Countries by Number of Successful Terrorist Attacks.png", width = 1000, height = 1000)
+png(filename = "Q2 - TOP-10 Countries by Number of Successful Terrorist Attacks.png", 
+    width = 2500, height = 2500, res = 300)
 data <- read.csv("terror.csv")
 
 data_grouped <- aggregate(Success ~ Country, data = data, FUN = sum) %>% top_n(n=10)
